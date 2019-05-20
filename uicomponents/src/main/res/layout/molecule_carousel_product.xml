@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.active24.uicomponents.atom.AtomImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgCarouselProduct"
+        />
+
+    <com.active24.uicomponents.atom.AtomicTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Título"
+        app:atom_style="title"
+        android:id="@+id/textViewCarouselProduct"
+        />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.active24.uicomponents.atom.AtomicTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="precio 1"
+        android:id="@+id/textViewPrice1CarouselProduct"
+        />
+
+    <com.active24.uicomponents.atom.AtomicTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="precio 2"
+        android:id="@+id/textViewPrice2CarouselProduct"
+
+        />
+</LinearLayout>

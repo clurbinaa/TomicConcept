@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region Default paddings -->
+    <dimen name="dimen_padding_small">4dp</dimen>
+    <dimen name="dimen_padding_medium">8dp</dimen>
+    <dimen name="dimen_padding_large">12dp</dimen>
+    <dimen name="dimen_padding_xl">18dp</dimen>
+    <!-- endregion -->
+
+    <!-- region Common margins -->
+    <dimen name="dimen_margin_xl">32dp</dimen>
+    <dimen name="dimen_margin_large">16dp</dimen>
+    <dimen name="dimen_margin_medium">8dp</dimen>
+    <dimen name="dimen_margin_small">4dp</dimen>
+    <dimen name="dimen_margin_very_small">2dp</dimen>
+    <!--endregion-->
+
+    <!-- region dimens of texts -->
+    <dimen name="text_general">14sp</dimen>
+    <dimen name="dimen_height_button">60dp</dimen>
+    <dimen name="dimen_default_button">20sp</dimen>
+    <!-- endregion -->
+</resources>

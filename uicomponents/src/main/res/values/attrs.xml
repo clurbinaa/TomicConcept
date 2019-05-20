@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AtomicTextView">
+        <attr name="atom_style" format="enum">
+            <enum name="title"            value="1"/>
+            <enum name="subtitle1"        value="2"/>
+            <enum name="subtitle2"        value="3"/>
+            <enum name="body1"            value="4"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AtomicButton">
+        <attr name="button_style" format="enum">
+            <enum name="pink"            value="1"/>
+            <enum name="white_next"        value="2"/>
+            <enum name="dark_gray"        value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="liverpool">#e10098</color>
+    <color name="rosaCorporativoHobver">#C81685</color>
+    <color name="rosaLiverpool">#e10098</color>
+    <color name="button_gray_hover">#73787a</color>
+    <color name="button_gray">#81898b</color>
+    <color name="white_ripple">#fff</color>
+
+</resources>

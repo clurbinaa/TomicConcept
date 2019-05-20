@@ -1,104 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-    <LinearLayout
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_padding_medium">
+
+    <com.active24.uicomponents.atom.AtomicTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/dimen_padding_medium">
-        <com.active24.uicomponents.atom.AtomicTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:atom_style="title"
-            android:layout_marginBottom="@dimen/dimen_margin_large"
-            android:text="Atomos de texto"/>
+        android:layout_marginBottom="@dimen/dimen_margin_large"
+        android:text="Atomos de texto"
+        app:atom_style="title" />
 
-        <com.active24.uicomponents.atom.AtomicTextView
-            android:id="@+id/sample1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_margin_medium"
-            android:layout_marginBottom="@dimen/dimen_margin_small"
-            android:text="Titulo"
-            app:atom_style="title"
-            tool:text="@tools:sample/full_names" />
+    <com.active24.uicomponents.atom.AtomicTextView
+        android:id="@+id/sample1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_margin_medium"
+        android:layout_marginBottom="@dimen/dimen_margin_small"
+        android:text="Titulo"
+        app:atom_style="title"
+        tool:text="@tools:sample/full_names" />
 
-        <com.active24.uicomponents.atom.AtomicTextView
-            android:id="@+id/sample2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_margin_medium"
-            android:layout_marginBottom="@dimen/dimen_margin_small"
-            android:text="Subtitulo 1"
-            app:atom_style="subtitle1"
-            tool:text="@tools:sample/full_names" />
+    <com.active24.uicomponents.atom.AtomicTextView
+        android:id="@+id/sample2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_margin_medium"
+        android:layout_marginBottom="@dimen/dimen_margin_small"
+        android:text="Subtitulo 1"
+        app:atom_style="subtitle1"
+        tool:text="@tools:sample/full_names" />
 
-        <com.active24.uicomponents.atom.AtomicTextView
-            android:id="@+id/sample3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_margin_medium"
-            android:layout_marginBottom="@dimen/dimen_margin_small"
-            android:text="Subtitulo 2"
-            app:atom_style="subtitle2"
-            tool:text="@tools:sample/full_names" />
+    <com.active24.uicomponents.atom.AtomicTextView
+        android:id="@+id/sample3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_margin_medium"
+        android:layout_marginBottom="@dimen/dimen_margin_small"
+        android:text="Subtitulo 2"
+        app:atom_style="subtitle2"
+        tool:text="@tools:sample/full_names" />
 
-        <com.active24.uicomponents.atom.AtomicTextView
-            android:id="@+id/sample4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_margin_medium"
-            android:layout_marginBottom="@dimen/dimen_margin_small"
-            android:text="Body 1"
-            app:atom_style="body1"
-            tool:text="@tools:sample/full_names" />
+    <com.active24.uicomponents.atom.AtomicTextView
+        android:id="@+id/sample4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_margin_medium"
+        android:layout_marginBottom="@dimen/dimen_margin_small"
+        android:text="Body 1"
+        app:atom_style="body1"
+        tool:text="@tools:sample/full_names" />
 
-        <com.active24.uicomponents.atom.AtomicTextView
-            android:id="@+id/sample5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_margin_medium"
-            android:layout_marginBottom="@dimen/dimen_margin_small"
-            android:text="$2,500.00"
-            app:atom_style="cash_format"
-            tool:text="$2,500.00" />
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
-        <com.active24.uicomponents.atom.AtomicTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:atom_style="title"
-            android:layout_marginBottom="@dimen/dimen_margin_large"
-            android:text="Atomos de botones"/>
-        <com.active24.uicomponents.atom.AtomicButton
-            android:text="Aceptar"
-            app:button_style="pink"
-            android:layout_marginStart="@dimen/dimen_margin_large"
-            android:layout_marginEnd="@dimen/dimen_margin_large"
-            android:layout_marginBottom="@dimen/dimen_margin_large"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <com.active24.uicomponents.atom.AtomicButton
-            android:text="Continuar"
-            app:button_style="white_next"
-            android:layout_marginStart="@dimen/dimen_margin_large"
-            android:layout_marginEnd="@dimen/dimen_margin_large"
-            android:layout_marginBottom="@dimen/dimen_margin_large"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <com.active24.uicomponents.atom.AtomicButton
-            android:text="Cancelar"
-            app:button_style="dark_gray"
-            android:layout_marginStart="@dimen/dimen_margin_large"
-            android:layout_marginEnd="@dimen/dimen_margin_large"
-            android:layout_marginBottom="@dimen/dimen_margin_large"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+    <com.active24.uicomponents.atom.AtomicTextView
+        android:id="@+id/sample5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_margin_medium"
+        android:layout_marginBottom="@dimen/dimen_margin_small"
+        android:text="$2,500.00"
+        app:atom_style="cash_format"
+        tool:text="$2,500.00" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <com.active24.uicomponents.atom.AtomicTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_large"
+        android:text="Atomos de botones"
+        app:atom_style="title" />
+
+    <com.active24.uicomponents.atom.AtomicButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_margin_large"
+        android:layout_marginEnd="@dimen/dimen_margin_large"
+        android:layout_marginBottom="@dimen/dimen_margin_large"
+        android:text="Aceptar"
+        app:button_style="pink" />
+
+    <com.active24.uicomponents.atom.AtomicButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_margin_large"
+        android:layout_marginEnd="@dimen/dimen_margin_large"
+        android:layout_marginBottom="@dimen/dimen_margin_large"
+        android:text="Continuar"
+        app:button_style="white_next" />
+
+    <com.active24.uicomponents.atom.AtomicButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_margin_large"
+        android:layout_marginEnd="@dimen/dimen_margin_large"
+        android:layout_marginBottom="@dimen/dimen_margin_large"
+        android:text="Cancelar"
+        app:button_style="dark_gray" />
+</LinearLayout>

@@ -15,12 +15,14 @@ public class OrganismCarouselProductsView extends LinearLayout {
 
     private Context context;
     private OrganismCarouselProductsModel model;
+    private OrganismCarouselProductsInterface listener;
     private RecyclerView recyclerView;
 
-    public OrganismCarouselProductsView(Context context, OrganismCarouselProductsModel model){
+    public OrganismCarouselProductsView(Context context, OrganismCarouselProductsModel model, OrganismCarouselProductsInterface listener){
         super(context);
         this.context = context;
         this.model = model;
+        this.listener = listener;
         init();
     }
 
@@ -31,7 +33,7 @@ public class OrganismCarouselProductsView extends LinearLayout {
         vista = inflater.inflate(R.layout.organism_carousel_products_view, this, true);
         this.recyclerView = vista.findViewById(R.id.carousel_recycled_horizontal);
         if (null != this.model){
-            OrganismCarouselProductsAdapter adapter = new OrganismCarouselProductsAdapter(this.model,this.context);
+            OrganismCarouselProductsAdapter adapter = new OrganismCarouselProductsAdapter(this.model,this.context, this.listener);
             LinearLayoutManager layoutManager = new LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false);
             this.recyclerView.setAdapter(adapter);
             this.recyclerView.setLayoutManager(layoutManager);

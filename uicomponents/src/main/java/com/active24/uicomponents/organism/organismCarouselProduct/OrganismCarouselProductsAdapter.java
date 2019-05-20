@@ -19,14 +19,16 @@ import static android.view.View.VISIBLE;
 
 public class OrganismCarouselProductsAdapter  extends RecyclerView.Adapter {
     private OrganismCarouselProductsModel model;
-    private Context contexto;
+    private Context context;
+    private OrganismCarouselProductsInterface listener;
 
 
-    public OrganismCarouselProductsAdapter(OrganismCarouselProductsModel model, Context contexto) {
+    public OrganismCarouselProductsAdapter(OrganismCarouselProductsModel model, Context context, OrganismCarouselProductsInterface listener) {
         this.model = model;
-        this.contexto = contexto;
+        this.context = context;
+        this.listener = listener;
 
-        WindowManager wm = (WindowManager) this.contexto.getSystemService(Context.WINDOW_SERVICE);
+        WindowManager wm = (WindowManager) this.context.getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
         DisplayMetrics metrics = new DisplayMetrics();
         display.getMetrics(metrics);
@@ -54,7 +56,9 @@ public class OrganismCarouselProductsAdapter  extends RecyclerView.Adapter {
         v.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (null != listener){
+                    listener.listenerClickCarousel(item,item.getDisplayName());
+                }
             }
         });
 //            if (!urlImage.equals("")) {

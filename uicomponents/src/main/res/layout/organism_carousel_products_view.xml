@@ -1,37 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/backColor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/ln_box_carousel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
+            <com.active24.uicomponents.atom.AtomicTextView
                 android:id="@+id/widget_carousel_home_titulo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:maxLines="2"
+                app:atom_style="title"
                 tools:text="asdasdas" />
 
-            <ImageView
-                android:id="@+id/widget_carousel_home_btn_ver_todo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:textAllCaps="false" />
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -39,8 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/min_vertical_margin"
-            android:paddingBottom="@dimen/min_vertical_margin">
-        </androidx.recyclerview.widget.RecyclerView>
+            android:paddingBottom="@dimen/min_vertical_margin" />
 
     </LinearLayout>
 

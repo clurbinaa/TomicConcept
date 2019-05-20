@@ -16,4 +16,15 @@
             <enum name="dark_gray"        value="3"/>
         </attr>
     </declare-styleable>
+    <declare-styleable name="MoleculePrice">
+        <attr name="price_type" format="integer">
+            <enum name="normal"            value="1"/>
+            <enum name="discount"        value="2"/>
+            <enum name="transfer"        value="3"/>
+        </attr>
+        <attr name="normalPrice" format="string" />
+        <attr name="regularPrice" format="string" />
+        <attr name="promotionPrice" format="string" />
+        <attr name="transferPrice" format="string" />
+    </declare-styleable>
 </resources>

@@ -6,6 +6,7 @@
             <enum name="subtitle1"        value="2"/>
             <enum name="subtitle2"        value="3"/>
             <enum name="body1"            value="4"/>
+            <enum name="cash_format"      value="5"/>
         </attr>
     </declare-styleable>
     <declare-styleable name="AtomicButton">

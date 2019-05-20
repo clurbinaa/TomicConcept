@@ -14,7 +14,8 @@ public class AtomicTextView extends AppCompatTextView {
         TITLE(1),
         SUBTITLE_1(2),
         SUBTITLE_2(3),
-        BODY_1(4);
+        BODY_1(4),
+        CASH_FORMAT(5);
 
         private int type;
         Type(int type){
@@ -83,6 +84,9 @@ public class AtomicTextView extends AppCompatTextView {
             case DEFAULT:
             case BODY_1:
                 this.setTextAppearance(getContext(), R.style.AppTheme_Text_Body1);
+                break;
+            case CASH_FORMAT:
+                this.setTextAppearance(getContext(), R.style.AppTheme_Text_CashStyle);
                 break;
         }
     }

@@ -27,14 +27,16 @@
     <com.active24.uicomponents.atom.AtomicTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="precio 1"
+        tools:text="$1,000.00"
+        app:atom_style="cash_format"
         android:id="@+id/textViewPrice1CarouselProduct"
         />
 
     <com.active24.uicomponents.atom.AtomicTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="precio 2"
+        tools:text="$1,000.00"
+        app:atom_style="cash_format"
         android:id="@+id/textViewPrice2CarouselProduct"
 
         />

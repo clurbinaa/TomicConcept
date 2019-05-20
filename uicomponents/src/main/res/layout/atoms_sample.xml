@@ -57,6 +57,7 @@
             android:text="Body 1"
             app:atom_style="body1"
             tool:text="@tools:sample/full_names" />
+
         <com.active24.uicomponents.atom.AtomicTextView
             android:id="@+id/sample5"
             android:layout_width="match_parent"

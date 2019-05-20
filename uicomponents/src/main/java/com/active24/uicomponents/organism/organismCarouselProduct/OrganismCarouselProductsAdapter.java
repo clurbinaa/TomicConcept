@@ -19,7 +19,6 @@ import static android.view.View.VISIBLE;
 
 public class OrganismCarouselProductsAdapter  extends RecyclerView.Adapter {
     private OrganismCarouselProductsModel model;
-
     private Context contexto;
 
 
@@ -31,7 +30,6 @@ public class OrganismCarouselProductsAdapter  extends RecyclerView.Adapter {
         Display display = wm.getDefaultDisplay();
         DisplayMetrics metrics = new DisplayMetrics();
         display.getMetrics(metrics);
-        int width = metrics.widthPixels;
 
     }
 
@@ -86,6 +84,10 @@ public class OrganismCarouselProductsAdapter  extends RecyclerView.Adapter {
     }
 
     private void prices(OrganismCarouselProductsModel.RecommendedItem item, MoleculeCarouselProduct v) {
+        v.price2.setVisibility(VISIBLE);
+        v.price1.setVisibility(VISIBLE);
 
+        v.price1.setText(String.valueOf(item.getListPrice()));
+        v.price2.setText(String.valueOf(item.getListPrice()));
     }
 }

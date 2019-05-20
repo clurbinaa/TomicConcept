@@ -1,6 +1,5 @@
 package com.active24.uicomponents.molecule;
 
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -9,8 +8,6 @@ import android.widget.TextView;
 import com.active24.uicomponents.R;
 
 public class MoleculeCarouselProduct extends RecyclerView.ViewHolder {
-
-    private Context context;
 
     public View view;
     public TextView title;

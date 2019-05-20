@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.view.WindowManager;
 import com.active24.uicomponents.R;
 import com.active24.uicomponents.molecule.MoleculeCarouselProduct;
 import com.active24.uicomponents.organism.organismCarouselProduct.model.OrganismCarouselProductsModel;
+import com.active24.uicomponents.organism.organismCarouselProduct.model.RecommendedItem;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
@@ -50,13 +52,15 @@ public class OrganismCarouselProductsAdapter  extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         final MoleculeCarouselProduct v = (MoleculeCarouselProduct) holder;
         v.view.setTag(position);
-        final OrganismCarouselProductsModel.RecommendedItem item = this.model.getRecommendedItems().get(position);
+        final RecommendedItem item = this.model.getRecommendedItems().get(position);
         final String urlImage = !TextUtils.isEmpty(item.getLargeImage()) ? item.getLargeImage() : "";
 
         v.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (null != listener){
+                    Log.d("OrganismCarousel", "listenerClickCarousel: ");
+
                     listener.listenerClickCarousel(item,item.getDisplayName());
                 }
             }
@@ -87,7 +91,7 @@ public class OrganismCarouselProductsAdapter  extends RecyclerView.Adapter {
         return (this.model.getRecommendedItems().size() > this.model.getMaximumNumRecords() && this.model.getMaximumNumRecords() != 0) ? this.model.getMaximumNumRecords() : this.model.getRecommendedItems().size();
     }
 
-    private void prices(OrganismCarouselProductsModel.RecommendedItem item, MoleculeCarouselProduct v) {
+    private void prices(RecommendedItem item, MoleculeCarouselProduct v) {
         v.price2.setVisibility(VISIBLE);
         v.price1.setVisibility(VISIBLE);
 

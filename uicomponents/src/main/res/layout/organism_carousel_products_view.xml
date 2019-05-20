@@ -28,12 +28,10 @@
 
         </LinearLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
+        <android.support.v7.widget.RecyclerView
             android:id="@+id/carousel_recycled_horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/min_vertical_margin"
-            android:paddingBottom="@dimen/min_vertical_margin" />
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

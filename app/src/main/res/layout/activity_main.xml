@@ -11,6 +11,14 @@
         android:orientation="vertical">
 
         <include layout="@layout/atoms_sample" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

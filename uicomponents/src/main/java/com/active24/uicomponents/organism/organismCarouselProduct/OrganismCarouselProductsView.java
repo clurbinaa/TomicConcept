@@ -29,8 +29,7 @@ public class OrganismCarouselProductsView extends LinearLayout {
     private void init() {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService
                 (Context.LAYOUT_INFLATER_SERVICE);
-        View vista = null;
-        vista = inflater.inflate(R.layout.organism_carousel_products_view, this, true);
+        View vista = inflater.inflate(R.layout.organism_carousel_products_view, this, true);
         this.recyclerView = vista.findViewById(R.id.carousel_recycled_horizontal);
         if (null != this.model){
             OrganismCarouselProductsAdapter adapter = new OrganismCarouselProductsAdapter(this.model,this.context, this.listener);
